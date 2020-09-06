@@ -1,0 +1,90 @@
+body{
+    margin:0;
+}
+/*-------------HEADER-----------*/
+.main-header{
+    position: sticky;
+    top: 0px;
+
+    width: 100%;
+    background-color: white;
+    border-bottom: 1px solid black;
+}
+/*-------------HEADER-SOCIAL-NETWORKS-----------*/
+.header-social-networks{
+    display: flex;
+    align-items: center;
+
+    height: 35px;
+    background-color: #3CB8D1;
+}
+.header-social-networks a{
+    text-decoration: none;
+    margin-left: 15px;
+}
+/*-------------HEADER-NAV-----------*/
+.header-nav{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 115px;
+}
+/*-------------HEADER-LOGOS-----------*/
+.header-logos{
+    /* border: 1px solid black; */
+    display: grid;
+    grid-template-columns: 150px 150px 300px;
+    grid-template-rows: 100%;
+
+}
+.header-logos a{
+    /* border: 1px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+.header-logos__image{    
+    /* border: 1px solid black; */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/*-------------HEADER-MENU-----------*/
+.header-menu{
+    /* border: 1px solid black; */
+}
+.header-menu ul{
+    display: flex;
+    justify-content: flex-end;
+
+    height: 100%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.header-menu__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+
+    /* border: 1px solid black; */
+    height: 100%;
+}
+.header-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: Leelawadee UI, Calibri;
+    font-size: 14px;
+    font-weight: 900;
+    color: #707070;
+}
+.header-menu a:hover{
+    color: #0687A1;
+}
