@@ -8,7 +8,6 @@ body{
 
     width: 100%;
     background-color: white;
-    border-bottom: 1px solid black;
 }
 /*-------------HEADER-SOCIAL-NETWORKS-----------*/
 .header-social-networks{
@@ -20,6 +19,7 @@ body{
 }
 .header-social-networks a{
     text-decoration: none;
+    margin-top: 2px;
     margin-left: 15px;
 }
 /*-------------HEADER-NAV-----------*/
@@ -30,14 +30,12 @@ body{
 }
 /*-------------HEADER-LOGOS-----------*/
 .header-logos{
-    /* border: 1px solid black; */
     display: grid;
     grid-template-columns: 150px 150px 300px;
     grid-template-rows: 100%;
 
 }
 .header-logos a{
-    /* border: 1px solid black; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -55,7 +53,7 @@ body{
 
 /*-------------HEADER-MENU-----------*/
 .header-menu{
-    /* border: 1px solid black; */
+
 }
 .header-menu ul{
     display: flex;
@@ -72,10 +70,57 @@ body{
     align-items: center;
     justify-content: center;
     flex: auto;
-
-    /* border: 1px solid black; */
     height: 100%;
 }
+.header-menu__item:hover{
+    background-color: #ebfafb;
+}
+/*menu desplegable -- investigacion*/
+.investigation-deploy{
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+
+    width: 350px;
+}
+.header-menu__item--investigation:hover > .investigation-deploy{
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    height: auto;
+}
+.header-menu__item--investigation img{
+    transform: rotate(180deg);
+    transition: transform .5s ease-out;
+}
+.header-menu__item--investigation:hover > img{
+    transform: rotate(360deg);
+}
+.investigation-deploy li{
+    background-color: #fff;
+    border: 1px solid black;
+
+    padding: 14px;
+    width: 100%;
+    height: auto;
+    text-transform: lowercase;
+
+}
+.investigation-deploy li a{
+    text-transform: capitalize;
+}
+.investigation-deploy--viewall{
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+/*font y text -- menu*/
 .header-menu a{
     text-decoration: none;
     text-transform: uppercase;
