@@ -1,0 +1,135 @@
+body{
+    margin:0;
+}
+/*-------------HEADER-----------*/
+.main-header{
+    position: sticky;
+    top: 0px;
+
+    width: 100%;
+    background-color: white;
+}
+/*-------------HEADER-SOCIAL-NETWORKS-----------*/
+.header-social-networks{
+    display: flex;
+    align-items: center;
+
+    height: 35px;
+    background-color: #3CB8D1;
+}
+.header-social-networks a{
+    text-decoration: none;
+    margin-top: 2px;
+    margin-left: 15px;
+}
+/*-------------HEADER-NAV-----------*/
+.header-nav{
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 115px;
+}
+/*-------------HEADER-LOGOS-----------*/
+.header-logos{
+    display: grid;
+    grid-template-columns: 150px 150px 300px;
+    grid-template-rows: 100%;
+
+}
+.header-logos a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+
+    text-decoration: none;
+    cursor: pointer;
+}
+.header-logos__image{    
+    /* border: 1px solid black; */
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
+}
+
+/*-------------HEADER-MENU-----------*/
+.header-menu{
+
+}
+.header-menu ul{
+    display: flex;
+    justify-content: flex-end;
+
+    height: 100%;
+    list-style: none;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+.header-menu__item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: auto;
+    height: 100%;
+}
+.header-menu__item:hover{
+    background-color: #ebfafb;
+}
+/*menu desplegable -- investigacion*/
+.investigation-deploy{
+    position: absolute;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity .5s ease-out;
+
+    width: 350px;
+}
+.header-menu__item--investigation:hover > .investigation-deploy{
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    height: auto;
+}
+.header-menu__item--investigation img{
+    transform: rotate(180deg);
+    transition: transform .5s ease-out;
+}
+.header-menu__item--investigation:hover > img{
+    transform: rotate(360deg);
+}
+.investigation-deploy li{
+    background-color: #fff;
+    border: 1px solid black;
+
+    padding: 14px;
+    width: 100%;
+    height: auto;
+    text-transform: lowercase;
+
+}
+.investigation-deploy li a{
+    text-transform: capitalize;
+}
+.investigation-deploy--viewall{
+    text-align: center;
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+}
+/*font y text -- menu*/
+.header-menu a{
+    text-decoration: none;
+    text-transform: uppercase;
+
+    font-family: Leelawadee UI, Calibri;
+    font-size: 14px;
+    font-weight: 900;
+    color: #707070;
+}
+.header-menu a:hover{
+    color: #0687A1;
+}

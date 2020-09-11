@@ -1,0 +1,14 @@
+.header-banner{
+    /* border: 1px solid black; */
+    width: 100%;    
+    height: 468px;
+    margin: 0;
+    background-color: rgb(212, 242, 251);
+}
+.container-img{
+    width: 100%;
+    height: 468px;
+    background-image: url(../img/banner-test.PNG);
+    background-size: cover;
+    background-position: center;
+}

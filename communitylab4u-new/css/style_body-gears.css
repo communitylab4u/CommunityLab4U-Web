@@ -1,0 +1,8 @@
+.body-gears{
+    background-color: #3CB8D1;
+    text-align: center;
+}
+.body-gears__img{
+    padding: 100px;
+    max-width: 100%;
+}
