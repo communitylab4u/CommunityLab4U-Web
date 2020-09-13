@@ -1,11 +1,14 @@
-/*------------- body ------------*/
-.engrane{
-    padding: 5em;
-    background-color: #3DBBD5;
+body{
+    background-color: rgb(80, 157, 177);
+    margin: 0;
 }
 
+/*------------- body ------------*/
+
 .box-gears__background{
-    background-image: url(../img/background-gears.png);
+    border: 4px solid black;
+
+    background-image: url(img/background-gears.png);
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;

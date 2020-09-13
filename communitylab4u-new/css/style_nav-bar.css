@@ -10,7 +10,7 @@ body{
     background-color: white;
 }
 /*-------------HEADER-SOCIAL-NETWORKS-----------*/
-.header-social-networks{
+/* .header-social-networks{
     display: flex;
     align-items: center;
 
@@ -21,7 +21,7 @@ body{
     text-decoration: none;
     margin-top: 2px;
     margin-left: 15px;
-}
+} */
 /*-------------HEADER-NAV-----------*/
 .header-nav{
     display: grid;
