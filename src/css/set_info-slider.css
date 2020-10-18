@@ -1,0 +1,15 @@
+[class^="slider__paragraph"]{
+    width: 50%;
+    text-align: center;
+}
+
+@media screen and (max-width: 768px){
+    [class^="slider__img"]{
+        display: none;
+    }
+    [class^="slider__paragraph"]{
+        width: 100%;
+        font-size: large;
+        text-align: center;
+    }
+}
