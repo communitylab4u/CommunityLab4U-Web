@@ -1,0 +1,250 @@
+@media screen and (min-width: 993px){
+
+  body{
+      overflow-x: hidden;
+  }
+  .engranes{
+      background-color: #4BA3C3;
+  }
+  .box-gears__background{
+      background-image: url(../../../assets/img/background-gears.png);
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      margin-left: auto;
+      margin-right: auto;
+
+      height: 500px;
+      width: 930px;
+      position: relative;
+  }
+
+  /*GEARS-LINK*/
+  [class^="gear_link"]{
+      border-radius: 50%;
+      position: absolute;
+      opacity: .5;
+  }
+  [class^="gear_link"]:hover{
+      opacity: 1;
+  }
+  [class^="gear_link"] p{
+      display: none;
+  }
+
+  /*GEARS-IMAGES-LINKS*/
+  .gear_link-view-all{
+      top: 5.6em;
+      left: 22.3em;
+      opacity: 1;
+  }
+  .gear_link-view-all img{
+      width: 210px;
+  }
+  .gear_link-applied-investigation{
+      top: 3.8em;
+      left: 10.1em;
+  }
+  .gear_link-applied-investigation img{
+      width: 170px;
+  }
+  .gear_link-innovation-academy{
+      top: 13.4em;
+      left: 15em;
+  }
+  .gear_link-innovation-academy img{
+      width: 145px;
+  }
+  .gear_link-bonding{
+      top: 11.4em;
+      left: 1.6em;
+  }
+  .gear_link-bonding img{
+      width: 200px;
+  }
+  .gear_link-entrepreneurship{
+      top: 3.9em;
+      left: 34.2em;
+  }
+  .gear_link-entrepreneurship img{
+      width: 125px;
+  }
+  .gear_link-developers-academy{
+      top: 11.1em;
+      left: 34.6em;
+  }
+  .gear_link-developers-academy img{
+      width: 220px;
+  }
+  .gear_link-programmers-academy{
+      top: 11.5em;
+      left: 48em;
+  }
+  .gear_link-programmers-academy img{
+      width: 150px;
+  }
+
+  /*------------- rotate-animation ------------*/
+
+  /*ROTATE LEFT*/
+
+  @keyframes animation-rotate-left-axis{
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(-360deg);
+      }
+  }
+
+  .rotate-left-axis{
+      transform-box: fill-box;
+      -webkit-animation: animation-rotate-left-axis linear 4s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-transform-origin: 50% 50%;
+  }
+
+  /*ROTATE RIGHT*/
+
+  @keyframes animation-rotate-right-axis{
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  .rotate-right-axis{
+      transform-box: fill-box;
+      -webkit-animation: animation-rotate-right-axis linear 4s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-transform-origin: center;
+  }
+}
+@media screen and (max-width: 992px){
+  body{
+      overflow-x: hidden;
+  }
+  .engranes{
+      background-color: #4BA3C3;
+  }
+  .box-gears__background{
+      /* background-image: url(../img/background-gears.png); */
+      margin-left: 10px;
+      display: flex;
+      flex-direction: column;
+  }
+
+  /*GEARS-LINK*/
+  [class^="gear_link"]{
+      display: flex;
+      align-items: center;
+
+      padding-left: 5px;
+      border-radius: 1%;
+      opacity: .8;
+  }
+  [class^="gear_link"]:active{
+      opacity: 1;
+      background-color: #4BA3C3;
+  }
+  [class^="gear_link"] p{
+      margin-left: 8%;
+      color: white;
+  }
+
+  /*GEARS-IMAGES-LINKS*/
+  .gear_link-view-all{
+      opacity: 1;
+      order: 3;
+  }
+  .gear_link-view-all img{
+      width: 180px;
+  }
+  .gear_link-applied-investigation{
+      order: 1;
+  }
+  .gear_link-applied-investigation img{
+      width: 160px;
+  }
+  .gear_link-innovation-academy{
+      order: 2;
+  }
+  .gear_link-innovation-academy img{
+      width: 160px;
+  }
+  .gear_link-bonding{
+      order: 0;
+  }
+  .gear_link-bonding img{
+      width: 160px;
+  }
+  .gear_link-entrepreneurship{
+      order: 4;
+  }
+  .gear_link-entrepreneurship img{
+      width: 160px;
+  }
+  .gear_link-developers-academy{
+      order: 5;
+  }
+  .gear_link-developers-academy img{
+      width: 160px;
+  }
+  .gear_link-programmers-academy{
+      order: 6;
+  }
+  .gear_link-programmers-academy img{
+      width: 160px;
+  }
+
+  /*------------- rotate-animation ------------*/
+
+  /*ROTATE LEFT*/
+
+/*     @keyframes animation-rotate-left-axis{
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(-360deg);
+      }
+  }
+
+  .rotate-left-axis{
+      transform-box: fill-box;
+      -webkit-animation: animation-rotate-left-axis linear 4s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-transform-origin: 50% 50%;
+  } */
+
+  /*ROTATE RIGHT*/
+
+/*     @keyframes animation-rotate-right-axis{
+      0% {
+          transform: rotate(0deg);
+      }
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  .rotate-right-axis{
+      transform-box: fill-box;
+      -webkit-animation: animation-rotate-right-axis linear 4s;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-transform-origin: center;
+  } */
+
+  @media screen and (max-width: 594px){
+      [class^="gear_link"] p{
+          font-size: 1.5rem;
+          padding-right: 10px;
+      }
+      [class^="gear_link"] img{
+          width: 90px;
+      }
+  }
+}
