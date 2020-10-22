@@ -9,6 +9,9 @@ import { GearsComponent } from './components/gears/gears.component';
 import { InfoSliderComponent } from './components/info-slider/info-slider.component';
 import { NewsSliderComponent } from './components/news-slider/news-slider.component';
 import { FormComponent } from './components/form/form.component';
+import { FooterComponent } from './components/footer/footer.component';
+import { InicioComponent } from './inicio/inicio.component';
+import { GaleriaComponent } from './galeria/galeria.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { FormComponent } from './components/form/form.component';
     GearsComponent,
     InfoSliderComponent,
     NewsSliderComponent,
-    FormComponent
+    FormComponent,
+    FooterComponent,
+    InicioComponent,
+    GaleriaComponent
   ],
   imports: [
     BrowserModule,
