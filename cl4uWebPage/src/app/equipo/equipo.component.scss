@@ -1,0 +1,71 @@
+.team__title{
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+  color: var(--color-primario)
+}
+.line__design{
+  background-color: var(--color-primario);
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+
+.team-cards{
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  grid-gap: 100px;
+
+  width: 95%;
+  padding: 40px 0;
+  margin: auto;
+
+  overflow: hidden;
+} .team-cards__card-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 5%;
+  background-color: var(--color-primario);
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+} .team-cards__card_title{
+  padding: 20px;
+  color: #fff;
+} .team-cards__card_image{
+  width: 50%;
+  border-radius: 50%;
+  object-fit: contain;
+  object-position: center;
+} .team-cards__container_social-media{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  padding: 40px;
+  width: 100%;
+  height: 60px;
+} [class^="team-cards__social-media"]{
+  color: #fff;
+  border-radius: 5%;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .5);
+
+  width: 20%;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+
+  transition: border .1s ease-in-out;
+} [class^="team-cards__social-media"]:hover{
+  border: 2px solid #fff;
+}
+.team-cards__social-media-twitter{
+  background-color: #00acee;
+} .team-cards__social-media-linkedin{
+  background-color: #0e76a8;
+} .team-cards__social-media-github{
+  background-color: #171515;
+}

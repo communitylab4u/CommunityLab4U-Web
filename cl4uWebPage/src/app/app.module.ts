@@ -12,6 +12,7 @@ import { FormComponent } from './components/form/form.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { InicioComponent } from './inicio/inicio.component';
 import { GaleriaComponent } from './galeria/galeria.component';
+import { EquipoComponent } from './equipo/equipo.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { GaleriaComponent } from './galeria/galeria.component';
     FormComponent,
     FooterComponent,
     InicioComponent,
-    GaleriaComponent
+    GaleriaComponent,
+    EquipoComponent
   ],
   imports: [
     BrowserModule,
