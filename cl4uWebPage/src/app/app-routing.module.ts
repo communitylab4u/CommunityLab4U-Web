@@ -3,11 +3,13 @@ import { Routes, RouterModule } from '@angular/router';
 import { EquipoComponent } from './equipo/equipo.component';
 import { GaleriaComponent } from './galeria/galeria.component';
 import { InicioComponent } from './inicio/inicio.component';
+import { InvestigacionComponent } from './investigacion/investigacion.component';
 
 const routes: Routes = [
   { path: 'Inicio', component: InicioComponent},
   { path: 'Galeria', component: GaleriaComponent},
   { path: 'Equipo', component: EquipoComponent},
+  { path: 'Investigacion', component: InvestigacionComponent},
   { path: '', redirectTo: 'Inicio', pathMatch: 'full'},
   { path: '**', redirectTo: 'Inicio'}
 ];
