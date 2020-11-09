@@ -1,10 +1,22 @@
 [class^="slider__paragraph"]{
-  width: 50%;
+  width: 60%;
   text-align: justify;
 }
 
+.carousel__title{
+  font-family: 'titles', sans-serif;
+  letter-spacing: 5px;
+}
+
+.icon-info{
+  font-size: 8.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 @media screen and (max-width: 768px){
-  [class^="slider__img"]{
+  [class^="icon-info"]{
       display: none;
   }
   [class^="slider__paragraph"]{
