@@ -1,0 +1,102 @@
+.container-banner{
+  height: 90vh;
+  width: 100%;
+  position: relative;
+}
+.banner__bgv{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+
+.banner__content{
+  width: 100%;
+  height: 80%;
+
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: 15;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  font-family: 'titles', sans-serif;
+  letter-spacing: 5px;
+  color: #fff;
+
+}
+.banner__title{
+  font-weight: bold;
+  font-size: 10rem;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+}
+.banner__linear-separation{
+  width: 50%;
+  height: 1.7rem;
+  background-color: var(--color-primario);
+  border-radius: 100%;
+
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, .8);
+
+  display: flex;
+  justify-content: center;
+}
+.banner__paragraph{
+  font-size: 4rem;
+  font-weight: bold;
+  text-shadow: 1px 1px 5px rgba(0, 0, 0, .3);
+}
+
+@media screen and (max-width: 1080px){
+  .banner__title{
+    font-size: 7rem;
+  }
+  .banner__paragraph{
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 758px){
+  .banner__title{
+    font-size: 5rem;
+  }
+  .banner__paragraph{
+    font-size: 2rem;
+  }
+}
+
+@media screen and (max-width: 570px){
+  .banner__title{
+    font-size: 4rem;
+  }
+  .banner__paragraph{
+    font-size: 1.8rem;
+  }
+}
+
+@media screen and (max-width: 465px){
+  .banner__title{
+    font-size: 3rem;
+  }
+  .banner__paragraph{
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .banner__title{
+    font-size: 2.5rem;
+  }
+  .banner__paragraph{
+    font-size: 1.2rem;
+  }
+}
+
