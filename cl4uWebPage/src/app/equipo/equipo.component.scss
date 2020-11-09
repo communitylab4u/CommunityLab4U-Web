@@ -3,7 +3,10 @@
   text-align: center;
   padding: 20px 0;
   font-size: 40px;
-  color: var(--color-primario)
+  color: var(--color-primario);
+  font-family: 'titles', sans-serif;
+  letter-spacing: 1px;
+
 }
 .line__design{
   background-color: var(--color-primario);
@@ -35,10 +38,11 @@
   padding: 20px;
   color: #fff;
 } .team-cards__card_image{
-  width: 50%;
+  max-width: 50%;
   border-radius: 50%;
   object-fit: contain;
   object-position: center;
+  box-shadow: 0 0 2px rgba(0, 0, 0, .2);
 } .team-cards__container_social-media{
   display: flex;
   justify-content: space-around;

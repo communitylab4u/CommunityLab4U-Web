@@ -8,4 +8,18 @@ body{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'others', sans-serif;;
+}
+
+.nav-active-link{
+  background: radial-gradient(circle, rgb(136, 192, 212) 0%, rgba(255,255,255,1) 100%);
+}
+
+@font-face {
+  src: url(./assets/fonts/NotoSansJP-Regular.otf);
+  font-family: 'titles';
+}
+@font-face {
+  src: url(./assets/fonts/Quicksand-VariableFont_wght.ttf);
+  font-family: 'others';
 }
