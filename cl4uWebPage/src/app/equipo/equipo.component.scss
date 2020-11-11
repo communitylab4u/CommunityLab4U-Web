@@ -73,3 +73,9 @@
 } .team-cards__social-media-github{
   background-color: #171515;
 }
+
+@media screen and (max-width: 764px){
+  .team__title{
+    font-size: 27px;
+  }
+}
