@@ -32,7 +32,7 @@ summary::-webkit-details-marker{
   animation-duration: 1s;
 }
 .acordeon__title{
-  color: white;
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 2.5rem;
   cursor: pointer;
@@ -40,7 +40,13 @@ summary::-webkit-details-marker{
   user-select: none;
   letter-spacing: 4px;
   text-shadow: 2px 2px 10px rgba(0, 0, 0, .5);
+} .acordeon__title::before{
+  content: "< ";
+} .acordeon__title::after{
+  content: " >";
 }
+
+
 [class^="container-projects"]{
   background-size: cover;
   background-position: center;
@@ -71,6 +77,7 @@ summary::-webkit-details-marker{
   letter-spacing: 3px;
   text-shadow: 1px 1px 5px rgba(0, 0, 0, .5);
 }
+
 .paragraph__proj{
   color:#fff;
   font-weight: bold;
@@ -125,6 +132,9 @@ summary::-webkit-details-marker{
   }
 }
 @media screen and (max-width: 764px){
+  .investigation__title{
+    font-size: 27px;
+  }
   .title__proj{
     font-size: 2.2rem;
   }
