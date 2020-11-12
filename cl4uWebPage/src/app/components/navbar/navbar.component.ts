@@ -10,16 +10,20 @@ export class NavbarComponent implements OnInit {
   constructor() {
 
     var prevScrollpos = window.pageYOffset;
+    var mediaqueryList = window.matchMedia("(min-width: 1092px)");
     window.onscroll = function() {
       var currentScrollPos = window.pageYOffset;
-      if (prevScrollpos > currentScrollPos) {
-        document.getElementById("navbar").style.top = "0";
-        document.getElementById("navbar").style.visibility = "visible";
-      } else {
-        document.getElementById("navbar").style.top = "-20vh";
-        document.getElementById("navbar").style.visibility = "hidden";
+
+      if(mediaqueryList.matches){
+        if (prevScrollpos > currentScrollPos) {
+          document.getElementById("navbar").style.top = "0";
+          document.getElementById("navbar").style.visibility = "visible";
+        } else {
+          document.getElementById("navbar").style.top = "-20vh";
+          document.getElementById("navbar").style.visibility = "hidden";
+        }
+        prevScrollpos = currentScrollPos;
       }
-      prevScrollpos = currentScrollPos;
     }
   }
 

@@ -1,7 +1,6 @@
 #navbar{
   top: 0;
   transition: top 0.35s, visibility 0.1s;
-
 }
 
 .config_nav__list-items{
@@ -52,9 +51,4 @@
     display: block;
   }
 
-}
-@media (max-width: 576px) {
-  .investigation__svg{
-    transform: rotate(360deg);
-  }
 }
