@@ -204,7 +204,7 @@
 
   /*ROTATE LEFT*/
 
-/*     @keyframes animation-rotate-left-axis{
+    @keyframes animation-rotate-left-axis{
       0% {
           transform: rotate(0deg);
       }
@@ -218,11 +218,11 @@
       -webkit-animation: animation-rotate-left-axis linear 4s;
       -webkit-animation-iteration-count: infinite;
       -webkit-transform-origin: 50% 50%;
-  } */
+  }
 
   /*ROTATE RIGHT*/
 
-/*     @keyframes animation-rotate-right-axis{
+     @keyframes animation-rotate-right-axis{
       0% {
           transform: rotate(0deg);
       }
@@ -236,7 +236,7 @@
       -webkit-animation: animation-rotate-right-axis linear 4s;
       -webkit-animation-iteration-count: infinite;
       -webkit-transform-origin: center;
-  } */
+  }
 
   @media screen and (max-width: 594px){
       [class^="gear_link"] p{

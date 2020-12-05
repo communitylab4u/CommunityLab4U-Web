@@ -16,9 +16,13 @@
 
 } .enlaces{
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }.enlaces__title{
-  font-size: 25px;
+  font-size: 1.7rem;
   color: white;
 }.enlaces__list{
   list-style: none;
