@@ -6,10 +6,11 @@ import { InicioComponent } from './inicio/inicio.component';
 import { InvestigacionComponent } from './investigacion/investigacion.component';
 
 const routes: Routes = [
-  { path: '', component: InicioComponent},
-  { path: ':id', component: InicioComponent},
+  { path: '', component: InicioComponent,
+    children: [
+      {path: 'proposito', component: InicioComponent}
+    ]},
   { path: 'investigacion', component: InvestigacionComponent},
-  { path: 'investigacion/:id', component: InvestigacionComponent},
   { path: 'equipo', component: EquipoComponent},
   { path: 'galeria', component: GaleriaComponent},
 ];
