@@ -7,10 +7,10 @@
   <div class="config_nav__items collapse navbar-collapse" id="navbarNavDropdown">
     <ul class="config_nav__list-items navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" (click)="toTop()" routerLink="/" routerLinkActive="nav-active-link">Inicio <span class="sr-only">(current)</span></a>
+        <a class="nav-link" (click)="toTop()" routerLink="/inicio" routerLinkActive="nav-active-link">Inicio <span class="sr-only">(current)</span></a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="toPurpose()" routerLink="/proposito">Propósito</a>
+        <a class="nav-link" (click)="toPurpose()" routerLink="/inicio/proposito">Propósito</a>
       </li>
       <li class="nav-item dropdown">
           <a class="investigation__deploy nav-link" routerLink="/investigacion" routerLinkActive="nav-active-link" data-toggle="dropdown" id="navbarDropdownMenuLink" aria-haspopup="true" aria-expanded="false" (click)="toTop()">
@@ -34,7 +34,7 @@
         <a class="nav-link" routerLink="/galeria" routerLinkActive="nav-active-link" (click)="toTop()">Galería</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" (click)="toContact()" routerLink="/contacto">Contacto</a>
+        <a class="nav-link" (click)="toContact()" routerLink="inicio//contacto">Contacto</a>
       </li>
     </ul>
   </div>
