@@ -1,0 +1,121 @@
+.gallery__title{
+  font-weight: 400;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 40px;
+  color: var(--color-primario);
+  font-family: 'titles', sans-serif;
+  letter-spacing: 1px;
+}
+.line__design{
+  background-color: var(--color-primario);
+  height: 5px;
+  width: 100%;
+  display: block;
+}
+.gallery{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  grid-gap: 10px;
+
+  width: 95%;
+  padding: 40px 0;
+  margin: auto;
+
+  overflow: hidden;
+
+} .gallery img{
+  width: 100%;
+  vertical-align: top;
+  height: 300px;
+  object-fit: cover;
+  transition: transform 0.5s;
+} .gallery a{
+  display: block;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
+} .gallery a:hover img{
+  filter: blur(2px);
+  transform: rotate(10deg) scale(1.3);
+}
+
+.gallery__light-box{
+  position: fixed;
+  top:0;
+  left:0;
+  background-color: rgba(0, 0, 0, .5);
+  width: 100%;
+  height: 100vh;
+  z-index: 1000;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  transform: scale(0);
+  /* transition: transform .3s ease-in-out; */
+} .gallery__light-box img{
+  max-width: 75vw;
+  max-height: 70vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  object-fit: contain;
+} .gallery__light-box:target{
+  transform: scale(1);
+} .gallery__light-box__close{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+
+  position: absolute;
+  bottom: 5px;
+
+  width: 300px;
+  height: 80px;
+  line-height: 40px;
+  text-decoration: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+  border-radius: 5%;
+
+  text-decoration: none;
+  color: #fff;
+  background-color: var(--color-primario);
+  transition: background-color .2s ease-in-out;
+
+} .gallery__light-box__close:hover{
+  color: var(--color-primario);
+  background-color: rgb(160, 203, 211);
+} .gallery__light-box__arrow{
+  display: block;
+
+  border-radius: 5%;
+  background-color: var(--color-primario);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  text-align: center;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+
+  transition: background-color .2s ease-in-out;
+
+}.gallery__light-box__arrow:hover{
+  color: var(--color-primario);
+  background-color: rgb(160, 203, 211);
+}
+
+@media screen and (max-width: 1024px){
+  .gallery__light-box__close{
+    font-size: 1.5rem;
+    width: 10rem;
+    height: 4rem;
+  }
+}
+
+@media screen and (max-width: 764px){
+  .gallery__title{
+    font-size: 27px;
+  }
+}
