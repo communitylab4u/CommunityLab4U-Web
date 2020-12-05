@@ -1,19 +1,32 @@
 <div class="form-container-div">
   <h2 class="form-container__title">Contactate con nosotros</h2>
-  <form class="form-container" action="correo.php" method="POST">
+  <form class="form-container" action="correo.php" method="POST" [formGroup]="contacto" (ngSubmit)="onSubmit()">
     <div class="form-row">
       <div class="form-group col-md-6">
-        <input  type="text" name="nombre" class="form-control" placeholder="Nombre completo">
+        <input  type="text" formControlName="nombre" name="nombre" class="form-control" placeholder="Nombre completo" [ngClass]="{ 'is-invalid': submitted && f.nombre.errors }">
+        <div *ngIf="submitted && f.nombre.errors" class="invalid-feedback">
+          <div *ngIf="f.nombre.errors.required">Debe ingresar su nombre completo</div>
+        </div>
       </div>
       <div class="form-group col-md-6">
-        <input  type="email" name="email" class="form-control" placeholder="Correo">
+        <input  type="email" formControlName="correo" name="correo" class="form-control" placeholder="Correo" [ngClass]="{ 'is-invalid': submitted && f.correo.errors }">
+        <div *ngIf="submitted && f.correo.errors" class="invalid-feedback">
+          <div *ngIf="f.correo.errors.required">El correo es obligatorio</div>
+          <div *ngIf="f.correo.errors.email">Debe ingresar un correo válido</div>
+        </div>
       </div>
     </div>
     <div class="form-group">
-      <input  type="text" name="asunto" class="form-control" placeholder="Asunto">
+      <input  type="text" formControlName="asunto" name="asunto" class="form-control" placeholder="Asunto" [ngClass]="{ 'is-invalid': submitted && f.asunto.errors }">
+      <div *ngIf="submitted && f.asunto.errors" class="invalid-feedback">
+        <div *ngIf="f.asunto.errors.required">Debe ingresar el asunto</div>
+      </div>
     </div>
     <div class="form-group">
-      <textarea type="text" name="mensaje" id="" rows="3" class="message-info form-control" placeholder="Tu mensaje..."></textarea>
+      <textarea type="text" formControlName="mensaje" name="mensaje" id="" rows="3" class="message-info form-control" placeholder="Tu mensaje..." [ngClass]="{ 'is-invalid': submitted && f.mensaje.errors }"></textarea>
+      <div *ngIf="submitted && f.mensaje.errors" class="invalid-feedback">
+        <div *ngIf="f.mensaje.errors.required">Debe ingresar un mensaje</div>
+      </div>
     </div>
     <button  class="send-info btn btn-dark">Enviar mensaje</button>
   </form>

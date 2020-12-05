@@ -6,14 +6,12 @@ import { InicioComponent } from './inicio/inicio.component';
 import { InvestigacionComponent } from './investigacion/investigacion.component';
 
 const routes: Routes = [
-  { path: 'Inicio', component: InicioComponent},
-  { path: 'Inicio/:id', component: InicioComponent},
-  { path: 'Galeria', component: GaleriaComponent},
-  { path: 'Equipo', component: EquipoComponent},
-  { path: 'Investigacion/:id', component: InvestigacionComponent},
-  { path: 'Investigacion', component: InvestigacionComponent},
-  { path: '', redirectTo: 'Inicio', pathMatch: 'full'},
-  { path: '**', redirectTo: 'Inicio'}
+  { path: '', component: InicioComponent},
+  { path: ':id', component: InicioComponent},
+  { path: 'investigacion', component: InvestigacionComponent},
+  { path: 'investigacion/:id', component: InvestigacionComponent},
+  { path: 'equipo', component: EquipoComponent},
+  { path: 'galeria', component: GaleriaComponent},
 ];
 
 @NgModule({
